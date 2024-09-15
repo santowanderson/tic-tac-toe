@@ -1,0 +1,78 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.0/schema.json",
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": false
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": []
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "space",
+		"lineWidth": 80,
+		"attributePosition": "auto"
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": {
+				"noBlankTarget": "error",
+				"noRedundantAlt": "error",
+				"useAltText": "error",
+				"useButtonType": "error",
+				"useHtmlLang": "error",
+				"useKeyWithClickEvents": "error"
+			},
+			"complexity": {
+				"noUselessRename": "error",
+				"noUselessUndefinedInitialization": "error",
+				"noUselessStringConcat": "error",
+				"noUselessTernary": "warn"
+			},
+			"correctness": {
+				"noUndeclaredVariables": "error",
+				"noUnusedVariables": "error",
+				"noUndeclaredDependencies": "error",
+				"useImportExtensions": "warn",
+				"noUnusedImports": "error"
+			},
+			"nursery": {
+				"noDuplicateElseIf": "error",
+				"useSortedClasses": "error"
+			},
+			"style": {
+				"noUnusedTemplateLiteral": "error",
+				"noUselessElse": "error",
+				"useConst": "warn",
+				"useThrowNewError": "error",
+				"useDefaultParameterLast": "error",
+				"useSelfClosingElements": "warn"
+			},
+			"suspicious": {
+				"noConsole": "warn",
+				"noDuplicateAtImportRules": "error",
+				"noDuplicateFontNames": "error",
+				"noDoubleEquals": "warn",
+				"noDuplicateJsxProps": "error",
+				"noDuplicateParameters": "error",
+				"noSelfCompare": "error",
+				"noSparseArray": "error",
+				"noSuspiciousSemicolonInJsx": "error",
+				"useAwait": "warn"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "always",
+			"quoteStyle": "single",
+			"bracketSpacing": true,
+			"arrowParentheses": "always",
+			"bracketSameLine": true
+		}
+	}
+}
